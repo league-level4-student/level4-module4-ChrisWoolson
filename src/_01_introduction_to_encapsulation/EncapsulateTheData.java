@@ -20,6 +20,27 @@ public class EncapsulateTheData {
 	//1. Encapsulate the member variables.
 	//   Add restrictions to the setters according to the comment.
 	
+	private int z = 2;
+	
+	public int accecor() {
+		return z;
+	}
+	
+	public void mutator(int x) {
+if(x>100) {
+	x=100;
+}
+if(x<0) {
+	x=0;
+}
+		
+		z=x;
+	}
+	
+	
+	
+	
+	
 	//2. Create a new JUnit Test case and write tests to verify that 
 	//   the member variables' getters and setters are working
 	

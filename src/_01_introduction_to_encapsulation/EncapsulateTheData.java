@@ -24,11 +24,11 @@ public class EncapsulateTheData {
 	
 	
 	
-	public int accecor1() {
+	public int accecorInt() {
 		return itemsReceived;
 	}
 	
-	public void mutator1(int x) {
+	public void mutatorInt(int x) {
 if(x<0) {
 	x=0;
 }
@@ -38,11 +38,11 @@ if(x<0) {
 	}
 	
 	//
-	public float accecor2() {
+	public float accecorFloat() {
 		return degreesTurned;
 	}
 	
-	public void mutator2(float x) {
+	public void mutatorFloat(float x) {
 if(x<0.0) {
 	x=0;
 }
@@ -54,11 +54,11 @@ if(x>360.0) {
 	}
 	
 	//
-	public String accecor3() {
+	public String accecorString() {
 		return nomenclature;
 	}
 	
-	public void mutator3(String x) {
+	public void mutatorString(String x) {
 if(x.equals("")) {
 	x=" ";
 }
@@ -68,11 +68,11 @@ if(x.equals("")) {
 	}
 	
 	//
-	public Object accecor4() {
+	public Object accecor4Obj() {
 		return memberObj;
 	}
 	
-	public void mutator4(Object x) {
+	public void mutatorObj(Object x) {
 if(x.getClass().equals(String.class)) {
 	Object b = x;
 	
@@ -94,10 +94,7 @@ if(x.getClass().equals(String.class)) {
 	
 	
 	
-	public void tester(){
-		mutator1(-2);
-		assertEquals(accecor1(), 0);
-	}
+	
 	
 	
 		

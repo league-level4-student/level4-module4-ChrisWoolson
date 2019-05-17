@@ -46,6 +46,10 @@ public class PolymorphWindow extends JPanel implements ActionListener{
    	polys.add(PM); 
 	PolyImage PI = new PolyImage(50,50);
 	polys.add(PI);
+	PolyJOP pjop = new PolyJOP(100,100);
+	window.addMouseListener(pjop);
+	polys.add(pjop);
+	
 	
 	
    	 timer = new Timer(1000 / 30, this);
